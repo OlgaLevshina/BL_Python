@@ -9,5 +9,5 @@ second = int(second)
 h = second//3600
 m = (second % 3600)//60
 s = (second % 3600) % 60
-second = f"{h:02}:{m}:{s}"
+second = f"{h:02}:{m:02}:{s:02}"
 print(second)
