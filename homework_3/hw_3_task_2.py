@@ -2,9 +2,8 @@
 # имя, фамилия, год рождения, город проживания, email, телефон.
 # Функция должна принимать параметры как именованные аргументы.
 # Реализовать вывод данных о пользователе одной строкой.
-def my_user(**kwargs):
-
-    return kwargs.values()
+def my_user(name, surname, birth_year, city, email, tel):
+    return f"Имя: {name}, Фамилия: {surname}, Год рождения: {birth_year}, Город проживания: {city}, e-mail: {email}, телефон: {tel}"
 
 params = {"name": "Olga",
           "surname": "Levshina",
@@ -13,5 +12,5 @@ params = {"name": "Olga",
           "email": "levshina@mail.ru",
           "tel": "89269999999"}
 
-print(" ".join(my_user(**params)))
+print(my_user(**params))
 
